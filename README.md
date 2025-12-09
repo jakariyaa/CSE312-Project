@@ -87,21 +87,17 @@ Data flows from frontend API calls → backend controllers → services → Mong
 
 ## Flow chart
 
-Add a project flow chart (user flows and request flows) to `docs/flowchart.png` or `docs/flowchart.svg`.
-
 Quick example (mermaid):
 
 ```mermaid
 flowchart LR
-  A[User (browser)] -->|HTTP request| B[Frontend]
-  B -->|API call (REST)| C[Backend: Express]
-  C --> D[Auth Service / Controllers]
-  C --> E[MongoDB]
-  C --> F[Redis]
-  C --> G[Cloudinary]
+    A["User (browser)"] -->|HTTP request| B["Frontend"]
+    B -->|"API call (REST)"| C["Backend: Express"]
+    C --> D["Auth Service / Controllers"]
+    C --> E[("MongoDB")]
+    C --> F[("Redis")]
+    C --> G["Cloudinary"]
 ```
-
-Replace the mermaid block with an image at `docs/flowchart.png` for documentation.
 
 ## Input
 
@@ -150,8 +146,6 @@ REDIS_PASSWORD=
 Note: `backend/src/app/config/env.ts` throws an error if required env vars are missing — ensure all required keys are present.
 
 ## ER diagram
-
-Add the ER (Entity Relationship) diagram to `docs/er-diagram.png` or `docs/er-diagram.svg`.
 
 Suggested core entities:
 - User (profile, email, hashed password, pin)
