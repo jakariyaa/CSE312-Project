@@ -199,6 +199,11 @@ Deployment recommendations:
 
 ----
 
+### Contributing
+- See `CONTRIBUTING.md` for guidelines
+
+---
+
 ### Acknowledgments
 - Inspired by various open-source wallet and fintech applications
 - Thanks to the maintainers of the libraries and tools used in this project
